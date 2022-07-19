@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.font1 {
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.font2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.font3 {
+  font-family: 'Festive', cursive;
+}
+.font4 {
+  font-family: 'Oswald', sans-serif;
+}
+.font5 {
+  font-family: 'Lato', sans-serif;
+}
+.font6{
+  font-family: 'Roboto Mono', monospace;
+}
+.font7{
+  font-family: 'Open Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(89, 172, 240);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#logo{
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 0px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: rgb(10, 19, 97);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.footer {
+  height: 50px;
+  background-color: #bd6418;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.footer a {
+  color: white;
+}  
+  
+.gradient-custom {
+    background: #a8edea;
+    
+    background: -webkit-linear-gradient(to right, rgba(168, 237, 234, 0.5), rgba(254, 214, 227, 0.5));
+  
+    background: linear-gradient(to right, rgba(168, 237, 234, 0.5), rgba(254, 214, 227, 0.5))
+}
+  
+.cbg {
+  background-color:rgba(20, 37, 197, 0.5);
+}
+.post-img img{
+    width: 100%;
+}
+.blog-post-content{
+    background-color: #33994c33;
+    width: 80vw;
+    margin: 20px 100px;
+    display: block;
+}
+.blog-post-content h1{
+    text-align: center;
+    padding-top:10px;
+    font-size: 50px;
+    line-height:1.8;
+}
+.blog-post-content p{
+    font-size: 18px; 
+    margin: 20px;
+    text-align: justify;
+    font-size:30px;
+}
+.blog-post-content li{
+    padding-top: 20px;
+}
+.list1{
+    padding-left: 50px;
+    padding-bottom:30px;
+    line-height: 1.6;
+}
+.style1{
+    color:rgb(196,56,37);
+    font-size:25px;
+}
+.style2{
+    color:#6b0080;
+    font-size:30px;
+}
+.style3{
+    color:blue;
+    font-size:20px;
+    padding-left: 1cm;
+    text-transform: uppercase;
+}

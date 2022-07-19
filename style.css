@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(89, 172, 240);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#logo{
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 0px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: rgb(10, 19, 97);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    height:400px;
+    background-position: center;
+    background-size: cover;
+    background: url(images/banner.png) no-repeat;
+    width:1250px;
+    margin:auto;
+}
+
+.home .content{
+    text-align: center;
+    width:100%;
+    padding-top: 0px;
+    padding-bottom: 120px;
+}
+
+.home .content h3{
+    color: black;
+    font-size: 50px;
+}
+
+.home .content h3 span{
+    color: green;
+}
+
+.home .content p{
+    font-size: 30px;
+    padding: 10px 250px 35px 250px;
+    line-height: 1.5;
+    border-width:5px;
+    border-color:black;
+    color: rgb(216, 70, 13);
+    text-align: right;
+}
+.home .content .btn{
+    background-color: rgba(245, 222, 179,1);
+}
+.home .content .btn:hover{
+    background: rgba(51, 8, 207, 0.9);
+    color:#fff;
+}
+.btn{
+    margin: 10px 0px;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 15px;
+    border-radius: 6px;
+    border:3px solid black;
+    color:black;
+    cursor: pointer;
+    background-color: rgba(245, 222, 179,0.5);
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background: rgba(51, 8, 207, 0.8);
+    color:#fff;
+}
+
+.features .box-container{
+    display: flex;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.features .box-container .box{
+    padding:40px 30px;
+    background: #fff;
+    outline: 1px solid rgba(0,0,0,0.1);
+    outline-offset: -0.5rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    width: auto;
+    max-width: 33%;
+    margin: 0px 25px;
+}
+
+.features .box-container .box:hover{
+    outline: black solid 2px;
+    outline-offset: 0;
+}
+
+.features .box-container .box img{
+    margin: 5px 0;
+    height: 80px;
+}
+
+.features .box-container .box h3{
+    font-size: 25px;
+    line-height: 1.8;
+    color:black;
+    margin: 3px 0px;
+}
+
+.features .box-container .box p{
+    font-size: 20px;
+    line-height: 1.8;
+    color:var(--light-color);
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    margin: 10px 0px;
+    text-transform: uppercase;
+}
+.categories .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 20px;
+}
+
+.categories .box-container .box{
+    padding:20px 20px;
+    border-radius: .5rem;
+    background:#fff;
+    outline: 1px solid rgba(0,0,0,0.1);
+    outline-offset: -0.5rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    width: auto;
+}
+
+.categories .box-container .box:hover{
+    outline: black solid 2px;
+    outline-offset: 0;
+}
+
+.categories .box-container .box img{
+    margin:0 0;
+    height: 80px;
+}
+
+.categories .box-container .box h3{
+   font-size: 30px;
+   color:black;
+   line-height: 1.8;
+}
+
+.categories .box-container .box p{
+    font-size: 20px;
+    line-height: 1.8;
+    padding: 10px 0;
+}
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    margin: 20px 10px;
+}
+
+.blogs .box-container .box{
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    background:#fff;
+    outline: 1.5px solid rgba(0,0,0,0.5);
+}
+
+.blogs .box-container .box img{
+    height:200px;
+    width:100%;
+    object-fit: cover;
+    outline: 1.5px solid rgba(0,0,0,1)
+}
+
+.blogs .box-container .box h3{
+    line-height: 1.4;
+    color:black;
+    font-size: 25px;
+    margin: 10px 5px;
+    height: 150px;
+    text-align: center;
+}
+
+.blogs .box-container .box a{
+    margin: 20px 80px;
+}
+
+.footer {
+    height: 50px;
+    background-color: #bd6418;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+  
+.footer a {
+    color: white;
+}  
